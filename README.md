@@ -42,3 +42,7 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+## 使用 Ant-Design-Mobile
+- 使用 ` babel-plugin-import ` 按需加载组件代码和样式 => ` config-overrides.js ` 文件
+- 使用 ` addLessLoader ` 修改主题 => ` config-overrides.js ` 文件

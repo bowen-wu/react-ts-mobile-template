@@ -14,6 +14,7 @@ const instance = async (fetchDataParams: InstanceParamsInterface) => {
     const {url, method, data = {}, headers = undefined, params} = fetchDataParams;
     try {
         const fetchUrl = method === Method.GET && params ? `${url}?${queryString.stringify(params)}` : url;
+        // data 有可能是 JSON.stringify(data)
         return await FetchData({url: fetchUrl, method, data: queryString.stringify(data), headers});
     } catch (error) {
         console.error('api error', error);
